@@ -3,7 +3,6 @@ import { connect } from "cloudflare:sockets";
 
 let Pswd = 'nilphreakz';
 const proxyIPs = ["workers.cloudflare.cyou"]; // https://github.com/NiLphreakz/CF-Trojan/blob/main/proxyip.txt
-let hostnames = [''];
 
 let sha224Password = '08f32643dbdacf81d0d511f1ee24b06de759e90f8edf742bbdc57d88';
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
@@ -371,8 +370,8 @@ export {
  
 //# sourceMappingURL=worker.js.map
 function gettrojanConfig(Pswd, hostName) {
-	const wtrojanwstls = `trojan://${Pswd}\u0040bug.com:443?security=tls&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#CF_Trojan/Pages`;
-	const ptrojanwstls = `trojan://${Pswd}\u0040bug.com:443?security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=random&path=%2F%3Fed%3D2560#CF_Trojan/Pages-TLS`;
+	const wtrojanwstls = `trojan://${Pswd}\u0040bug.com:443?security=tls&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#CF_Trojan`;
+	const ptrojanwstls = `trojan://${Pswd}\u0040bug.com:443?security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=random&path=%2F%3Fed%3D2560#CF_Trojan`;
     const note = `正在使用的ProxyIP：${proxyIP}`;
   
     if (hostName.includes('pages.dev')) {
@@ -399,21 +398,17 @@ By NiLphreakz
 `;
   } else {
     return `
-==========================配置详解==============================
-
-${note}
-
-################################################################
-一、Link Config Trojan :
+#############################################
+Link Config Trojan :
 
 ${wtrojanwstls}
 
----------------------------------------------------------------
+---------------------------------------------
 Support Port :
 TLS : (443, 8443, 2053, 2083, 2087, 2096)
 
 NON-TLS : (80, 8080, 2052, 2082, 2086, 2095)
-################################################################
+#############################################
 
 Telegram: https://t.me/NiLphreakz
 

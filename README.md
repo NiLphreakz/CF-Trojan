@@ -6,4 +6,4 @@ Sila tekan link ini untuk membuat password trojan : https://www.atatus.com/tools
 
 ## Penghargaan
 
-Kebanyakan kod projek datang daripada Yongge Kankan, alamat projek: https://github.com/yonggekkk/Cloudflare_vless_trojan, terima kasih di sini!
+Credited to : https://github.com/yonggekkk/Cloudflare_vless_trojan

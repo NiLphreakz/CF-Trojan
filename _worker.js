@@ -5,7 +5,7 @@ let Pswd = 'nilphreakz';
 const proxyIPs = ["workers.cloudflare.cyou"]; // https://github.com/NiLphreakz/CF-Trojan/blob/main/proxyip.txt
 let hostnames = [''];
 
-let sha224Password ;
+let sha224Password = '08f32643dbdacf81d0d511f1ee24b06de759e90f8edf742bbdc57d88';
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 const worker_default = {
     /**
